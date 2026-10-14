@@ -18,9 +18,6 @@ jobs:
     name: Write Authorization Security Tests
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    env:
-      COVERAGE_FILE: ${{ runner.temp }}/.coverage
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
